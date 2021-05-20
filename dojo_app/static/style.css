@@ -1,0 +1,43 @@
+.alignment{
+    border-color: black;  
+    border-width: .1em;  
+    border-style: solid;
+    width: 500px;
+    margin-left: 500px;
+    padding: 50px;
+}
+
+label, p{
+    font-size: 2em;
+}
+
+textarea{
+    width: 495px;
+    height: 100px;
+}
+
+#button{
+    margin-left: 400px;
+    width: 100px;
+}
+
+#your-name{
+    margin-left: 135px;
+    width: 202px;
+    height: 22px;
+}
+.language{
+    margin-left: 43px;
+    width: 210px;
+    height: 30px;
+}
+.location{
+    margin-left: 89px;
+    width: 210px;
+    height: 30px;
+}
+
+#radio{
+    margin-top: 40px;
+}
+
