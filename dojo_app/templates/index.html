@@ -8,38 +8,38 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             {% load static %}
             <link rel="stylesheet" href="{% static 'style.css' %}">    
-            <script src="{% static 'js/script.js' %}"></script>
         </head>
         <body>
             <div class="alignment">
-                <form>
+                <form action="/result" method='POST'>
+                    {% csrf_token %}
                     <br>
                     <label for="name">Your name:</label>
-                    <input id = "your-name" type="text" id = "name" name = "name">
+                    <input class="your-name" type="text" name = "name">
                     <br><br>
-                    <label for="languages">Favorite Language</label>
+                    <label for="languages">Favorite Language</label> 
                     <select class = "language" name= "language">
-                        <option value="javascript">Javascript</option>
-                        <option value="python">Python</option>
-                        <option value="ruby">Ruby</option>
+                        <option value="Javascript">Javascript</option>
+                        <option value="Python">Python</option>
+                        <option value="Ruby">Ruby</option>
                     </select>
                     <br><br>
                     <label for="location">Dojo Location:</label>
                     <select class = "location" name= "location">
-                        <option value="seattle">Seattle</option>
-                        <option value="san-jose">San Jose</option>
-                        <option value="chicago">Chicago</option>
+                        <option value="Seattle">Seattle</option>
+                        <option value="San Jose">San Jose</option>
+                        <option value="Chicago">Chicago</option>
                     </select>
                     <br>
-                    <input id = "radio" type="radio" id="male" name="gender" value="male">
+                    <input class = "radio" type="radio" id="male" name="gender" value="Male">
                     <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="female">
+                    <input type="radio" id="female" name="gender" value="Female">
                     <label for="female">Female</label>
-                    <input type="radio" id="other" name="gender" value="other">
+                    <input type="radio" id="other" name="gender" value="Other">
                     <label for="other">Other</label>
-                    <p>Comment (optional):</p>
+                    <p id = "comment">Comment (optional):</p>
                     <textarea name="description"></textarea>
-                    <br><br>
+                    <br><br> 
                     <input type="submit" value="Button" id = "button">
                 </form>
             </div>

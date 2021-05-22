@@ -21,8 +21,8 @@ textarea{
     width: 100px;
 }
 
-#your-name{
-    margin-left: 135px;
+.your-name{
+    margin-left: 405px;
     width: 202px;
     height: 22px;
 }
@@ -35,9 +35,16 @@ textarea{
     margin-left: 89px;
     width: 210px;
     height: 30px;
+    margin-bottom: 200px;
+    padding-bottom: 200px;
 }
 
-#radio{
+.radio{
     margin-top: 40px;
+}
+
+#comment{
+    margin-top: 0px;
+    padding-top: 0px;
 }
 

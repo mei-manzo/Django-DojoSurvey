@@ -1,0 +1,18 @@
+h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: underline;
+    padding-top: 0px;
+    height: 50px;
+}
+
+.box{
+    border-color: black;  
+    border-width: .1em;  
+    border-style: solid;
+    width: 500px;
+    margin-left: 500px;
+    padding: 20px;
+
+    
+}
