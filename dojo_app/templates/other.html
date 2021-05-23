@@ -10,12 +10,13 @@
     <script src="{% static 'js/script.js' %}"></script>
 </head>
 <body class= "box">
+    <!-- <p>Name in session is: {{request.session.name}}</p> -->
     <h2>Submitted Info</h2>
-    <p>Name: {{name}}</p>
-    <p>Dojo Location: {{location}}</p>
-    <p>Favorite Language: {{language}}</p>
-    <p>Gender: {{gender}}</p>
-    <p>Comment: {{description}}</p>
+    <p>Name: {{request.session.name}}</p>
+    <p>Dojo Location: {{request.session.location}}</p>
+    <p>Favorite Language: {{request.session.language}}</p>
+    <p>Gender: {{request.session.gender}}</p>
+    <p>Comment: {{request.session.description}}</p>
 </body>
 </html>
 
