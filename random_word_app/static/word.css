@@ -1,0 +1,20 @@
+h2{
+    margin-left: 620px;
+
+}
+h1{
+    width: 330px;
+    height: 40px;
+    margin-left: 550px;
+    padding-left: 70px;
+    padding-right:0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-color: black;  
+    border-width: .1em;  
+    border-style: solid;
+}
+
+#button{
+    margin-left: 720px;
+}

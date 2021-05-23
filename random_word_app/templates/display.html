@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'word.css' %}">  
+    <title>Random Word Generator</title>
+</head>
+<body>
+    <form action="/return_page" method='POST'>
+        {% csrf_token %}
+        <h2>Random Word (attempt # {{ counter }} )</h2>
+        <h1>{{ try_count }}</h1>
+        <input type="submit" value="Generate" id = "button">
+    </form>
+</body>
+</html>
