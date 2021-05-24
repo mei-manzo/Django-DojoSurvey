@@ -9,11 +9,12 @@
     <title>Random Word Generator</title>
 </head>
 <body>
-    <form action="/return_page" method='POST'>
+    <form action="/random_word" method='POST'>
         {% csrf_token %}
-        <h2>Random Word (attempt # {{ counter }} )</h2>
-        <h1>{{ try_count }}</h1>
+        <h2>Random Word (attempt # {{ request.session.counter }} )</h2>
+        <h1> {{ request.session.try_count }}</h1>
         <input type="submit" value="Generate" id = "button">
+        <a href="http://localhost:8000/reset"><input type="button" value = "Reset"/></a>
     </form>
 </body>
 </html>
